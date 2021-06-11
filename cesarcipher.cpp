@@ -16,19 +16,20 @@ int main(){
 
     shift = shift % 26;
 
-//Works for the time being but it will also shift symbols and other characters
-//I will probably just make the input change if it is within the ascii number
-//of 65-90 and 97-122, instead of matching the symbol
+//This will only shift English letters. It will ignore all other characters and letters.
+//This shifts both uppercase letters (ascii = 65-90) and lowercase letters (ascii = 97-122).
+
     for (i=0; i < sizeof(output); i++) {
-        if (int(input[i])==32){
-            output[i] = input[i];
+        if ((int(input[i]) >= 65 && int(input[i]<= 90) || (int(input[i]) >= 97 && int(input[i]) <= 122))){
+            output[i] = int(input[i]+shift);
             std::cout << output[i];
         }
         else{
-            output[i] = int(input[i]+shift);
+            output[i] = input[i];
             std::cout << output[i];
         }
     }
 
+    std::cout << std::endl;
     return 0;
 }
