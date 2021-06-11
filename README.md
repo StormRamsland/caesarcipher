@@ -4,7 +4,7 @@ A text based Caesar Cipher made in C++
 A Caesar Cipher is a cryptograhic cipher which encrypts your message.  
 The cipher got its name from Julius Caesar who is said to have used it to protect messages.  
 It is a type of substitution cipher which works by shifting the alphabet a set amount.  
-It is not recommended to use to encrypt your messages for important things since it would be easily broken by hand.  
+It is not recommended to use for important things since it would be easily broken by hand.  
 ## Example
 I want to shift the message "Hello World" by 4  
 The alphabet would shift by 4 so A would become E  
