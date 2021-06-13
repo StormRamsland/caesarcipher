@@ -19,8 +19,8 @@ int main(){
 //This will only shift English letters. It will ignore all other characters and letters.
 //This shifts both uppercase letters (ascii = 65-90) and lowercase letters (ascii = 97-122).
 
-    for (i=0; i < sizeof(output); i++) {
-        if ((int(input[i]) >= 65 && int(input[i]<= 90) || (int(input[i]) >= 97 && int(input[i]) <= 122))){
+    for (i=0; (unsigned)i < sizeof(output); i++) {
+        if (((int(input[i]) >= 65 && int(input[i]<= 90)) || (int(input[i]) >= 97 && int(input[i]) <= 122))){
             output[i] = int(input[i]+shift);
             std::cout << output[i];
         }
