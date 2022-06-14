@@ -11,3 +11,5 @@ The alphabet would shift by 4 so A would become E
 | A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z |  
 | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | W | X | Y | Z | A | B | C | D |  
 So my message would go from "Hello World" to "Lipps Asvph"  
+## TODO
+Fix problem where shift doesn't check if the ASCII symbol shifted to is a character.
